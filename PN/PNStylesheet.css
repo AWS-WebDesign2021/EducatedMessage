@@ -1,0 +1,248 @@
+
+table, tr {
+ border: 3px solid #ADD8E6;
+ color: #20B2AA;
+ font-family: Courier New;
+ font-size: 23px;
+ padding: 15px;
+ position: relative;
+ left: 475px;
+ top: 90px;
+}
+.inf0 {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 190px;
+  padding: 10px;
+  z-index: 5;
+}
+.info {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 360px;
+  padding: 10px;
+  z-index: 1;
+}
+.inf {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left:10px;
+  padding: 10px;
+  z-index: 5;
+}
+.info2 {
+  color:black;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info3 {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+}
+.info4 {
+  color:#DCDCDC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info5 {
+  color:#FFF8DC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.img2 {
+  position: absolute;
+  right: 30px;
+  top: 525px;
+}
+.img3 {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+.img4 {
+  position: absolute;
+  right: 50px;
+  top: 500px;
+}
+.img5 {
+  font-size: 11px;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  right: 150px;
+  top: 20px;
+}
+ .dropbtn {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 295px;
+}
+ .dropbtn2 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 227px;
+}
+.dropdown p {
+  position: relative;
+  display: block;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+  background-color: #8A2BE2;
+  position: absolute;
+  left:10px;
+  top: 255px;
+  padding: 10px;
+}
+.dropdown2 p {
+  position: relative;
+  display: block;
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  font-family: sans-serif;
+  color: #8B0000;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left:10px;
+  top: 345px;
+}
+.dropdown-content2 {
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 277px;
+}
+.dropdown-content a {
+  color:#8B0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdown:hover {
+  display: block;
+}
+.dropdown {
+  background-color: #9932CC;
+}
+.dropdown:hover .dropdown-content {
+  color:#8B0000;
+  background-color:#FFB6C1;
+  font-family: sans-serif;
+  display: block;
+}
+/*point from one to two*/
+
+.dropdown-content2 a {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdown2:hover {
+  display: block;
+}
+.dropdown2 {
+  background-color:#66CDAA;
+}
+.dropdown2:hover .dropdown-content2 {
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  display: block;
+}
+.bib {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  left:10px;
+  top: 500px;
+  padding: 10px;
+  z-index: 5;
+}
+.bib2 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 525px;
+}
