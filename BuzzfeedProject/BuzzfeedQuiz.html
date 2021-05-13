@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<div id="all">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel = "icon" href = "Icon.jpg" type = "image/x-icon">
+    <link href="Buzzfeed.css" type="text/css" rel="stylesheet">
+
+    <title>ULTIMATE Marvel Trivia Quiz</title>
+  </head>
+  <body>
+    <br>
+    <center> <h1>ULTIMATE Marvel Trivia Quiz</h1> </center>
+    <form>
+     <div class="navbar">
+
+      <a href="./BuzzfeedHome.html">Home</a>
+       <div class="dropdown">
+        <button class="dropbtn">Sources
+          <i class="fa fa caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./WebsiteSources.html">Website Sources</a>
+          <a href="./ImageSources.html">Image Sources</a>
+        </div>
+      </div>
+      </div>
+      <center>
+      <h3>Let's get started!</h3>
+
+      <img src="Main.jpg">
+      <br>
+      <p><b>What does SHIELD stand for?</b></p>
+      <input type="radio" id="ShTrue" name="Shield" value=1>
+    <label for="ShTrue">Strategic Homeland Intervention, Enforcement, and Logistics Division</label><br>
+    <input type="radio" id="ShFalse" name="Shield" value=0>
+    <label for="ShFalse">Strategic Hazard Intervention Espionage Logistics Directorate</label><br>
+    <input type="radio" id="ShFalse" name="Shield" value=0>
+    <label for="ShFalse">Supreme Headquarters, International Espionage, Law-Enforcement Division</label>
+    <br>
+      <br>
+      <img src="SHIELD.gif" height=300 width=500>
+      <br>
+      <br>
+       <p><b>Who is the oldest Marvel character?</b></p>
+       <input type="radio" id="AgeFalse" name="Age" value=0>
+      <label for="optionS">Bucky Barnes</label>
+      <input type="radio" id="AgeTrue" name="Age" value=1>
+      <label for="option2">Thor</label>
+      <input type="radio" id="AgeFalse" name="Age" value=0>
+      <label for="option3">Steve Rogers</label>
+      <br>
+      <br>
+      <img src="Old.jpg" height=300 width=200>
+      <br>
+      <br>
+      <label for="user">What year did the first Marvel comic come out?</label>
+      <br>
+      <input maxlength="4" type="text" name="username" id="user">
+      <br>
+      <br>
+      <img src="Comic.gif" width=350 height=500>
+      <br>
+      <br>
+            <label for="col">Favorite Color? </label>
+      <input maxlength="15" type="text" name="color" id="col">
+      <br>
+      <br>
+      <label for="scoop1">How many scoops?</label>
+      <input value="1" min="1" max="1000000" type="number" name="num" id="scoop1">
+      <br>
+      <br>
+      <span>Extra sprinkles?</span>
+      <br>
+      <br>
+      <label for="sprinkles"> <img src="Sprinkles.gif" width=450 height=300> </label>
+      <br>
+      <input id="sprinkles" type="checkbox" name="extraSprinkles" contenteditable="true">
+        <br>
+        <br>
+
+      <label for="holder">Pick your container:</label>
+      <select name="select" id="holder">
+        <option name="option1">a cone</option>
+        <option name="option2">a cup</option>
+        <option name="option3">your bare hands</option>
+      </select>
+      <br>
+      <br>
+      <p><b>Choose your flavor:</b></p>
+      <label for="flavor">Vanilla</label>
+      <input id="flavor" type="checkbox" name="flavor">
+      <label for="flavor2">Chocolate</label>
+      <input id="flavor2" type="checkbox" name="flavor2">
+      <label for="flavor3">Strawberry</label>
+      <input id="flavor3" type="checkbox" name="flavor3">
+      <label for="flavor4">Cookies and Cream</label>
+      <input id="flavor4" type="checkbox" name="flavor4">
+      <label for="flavor5">Butter Pecan</label>
+      <input id="flavor5" type="checkbox" name="flavor5">
+      <label for="flavor6">Rainbow Sorbet</label>
+      <input id="flavor6" type="checkbox" name="flavor6">
+      <br>
+      <br>
+      <img src="Options.jpg" height=400 width=500>
+      <br>
+      <br>
+      <p><b>Choose your toppings:</b></p>
+      <label for="toppings">Sprinkles</label>
+      <input id="toppings" type="checkbox" name="toppings1">
+      <label for="toppings2">Cherries</label>
+      <input id="toppings2" type="checkbox" name="toppings1">
+      <label for="toppings3">Gummies</label>
+      <input id="toppings3" type="checkbox" name="toppings1">
+      <label for="toppings4">Reese's</label>
+      <input id="toppings4" type="checkbox" name="toppings1">
+      <label for="toppings5">Chocolate Syrup</label>
+      <input id="toppings5" type="checkbox" name="toppings1">
+      <label for="toppings6">Caramel Syrup</label>
+      <input id="toppings6" type="checkbox" name="toppings1">
+      <br>
+      <br>
+      <input type="button" value="Submit" onclick="showInput();">
+      </center>
+    </form>
+
+    <br>
+    <br>
+    <div id="results">
+      <p>Hi, 
+        <span id="CustomerName"></span>, your  
+        <span id="scoops"></span>
+         scoop ice cream in 
+        <span id="container"></span>
+        looks <b>delicious!</b>
+        <br>
+        It costs $<span id="totPrice"></span>, and guess what? My favorite color is 
+        <span id="color"></span> too!
+        <br>
+        And about your number of toppings...<span id="topp"></span>
+      </p>
+
+    </div>
+
+    <script language="JavaScript">
+
+    function showInput() {
+        var r = document.getElementById('results');
+        r.style.display = "block";
+
+        document.getElementById('CustomerName').innerHTML =
+                    document.getElementById("user").value;
+        document.getElementById('scoops').innerHTML =
+                                document.getElementById("scoop1").value;
+
+        var price = document.getElementById("scoop1").value*10;
+        document.getElementById("totPrice").innerHTML = price;
+
+        document.getElementById("container").innerHTML =
+                    document.getElementById("holder").value;
+document.getElementById("color").innerHTML =
+                    document.getElementById("col").value;
+        var numTop = 0;
+        if (document.getElementById("optionS").checked)
+        {
+          numTop = numTop + 1;
+        }
+
+        if (document.getElementById("toppings2").checked)
+        {
+
+          numTop = numTop + 1;
+        }
+
+        if (document.getElementById("toppings3").checked)
+        {
+
+          numTop = numTop + 1;
+        }
+
+        if (document.getElementById("toppings4").checked)
+        {
+
+          numTop = numTop + 1;
+        }
+
+        if (document.getElementById("toppings5").checked)
+        {
+
+          numTop = numTop + 1;
+        }
+
+        if (document.getElementById("toppings6").checked)
+        {
+
+          numTop = numTop + 1;
+        }
+
+        if (numTop > 4) {
+
+        document.getElementById('topp').innerHTML = "I hope you're sharing that or you're gonna be sick!"
+        }
+        else {
+          document.getElementById('topp').innerHTML = "add some more! That's just wimpy!"
+        }
+
+    }
+    </script>
+</div>
+  </body>
+</html>
