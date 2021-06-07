@@ -1,0 +1,1187 @@
+/*CSS for Portfolio homepage-where I have my two animations, my new complex CSS and my links to other pages.*/
+
+/*I used different numbers after "commentary" for each webpage because each commentary is different.*/
+.commentary {
+  font-size: 17px;
+  font-family: fantasy;
+  position: relative;
+  top: -800px;
+  right: -980px;
+  width: 28%;
+
+}
+.spec {
+    font-family: garamond;
+  position: relative;
+  left: -1000px;
+  top: -500px;
+}
+.spec1 {
+  font-family: garamond;
+  position: relative;
+  left: -1000px;
+  top: -470px;
+
+}
+/*CSS for familiarity quiz results on homepage.*/
+.results {
+    padding: 50px;
+    font-family: garamond;
+    display: none;
+    background-color: #6495ED;
+    margin-top: 20px;
+    font-size: 18;
+    position: relative;
+    top: 100px;
+    left: -1000px;
+}
+.hid {
+  color: #e600e6;
+}
+.place {
+  position: relative;
+  top: -400px;
+  left:  -1000px;
+}
+
+div.all {
+  font-family: Garamond;
+}
+ div.all1 {
+  font-family: Garamond;
+  text-indent: 40px;
+ }
+/*Image gallery. This is my new complex CSS feature.*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.999999%;
+  position: relative;
+  top: -810px;
+}
+
+.responsive2 {
+  padding: 0 6px;
+  float: left;
+  width: 24.999999%;
+  position: relative;
+  top: -790px;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Nav bar*/
+
+
+/*Animation*/
+.hey {
+  width: 225px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation-name: hey;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hey {
+  0%   {background-color:red; left:100px; top:0px;}
+  25%  {background-color:yellow; left:950px; top:0px;}
+  50%  {background-color:blue; left:950px; top:0px;}
+  75%  {background-color:green; left:100px; top:0px;}
+  100% {background-color:red; left:100px; top:0px;}
+}
+/*Stock photo divs*/
+.stock1 {
+  position: relative;
+  left: 10px;
+  top: -10px;
+}
+
+.stock2 {
+  position: relative;
+  left: 190px;
+  top: -80px;
+}
+
+.stock3 {
+  position: relative;
+  left: 370px;
+  top: -325px;
+}
+
+.stock4 {
+  position: relative;
+  left: 550px;
+  top: -390px;
+  }
+
+  .stock5 {
+  position: relative;
+  left: 725px;
+  top: -635px;
+  }
+
+.stock6 {
+  position: relative;
+  left: 900px;
+  top: -690px;
+  }
+
+   .stock7 {
+  position: relative;
+  left: 1050px;
+  top: -945px;
+  }
+/*Styletip*/
+.tooltip {
+  font-family: monospace;
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  display: inline-block;
+  text-indent: 40px;
+}
+
+.tooltip .tooltiptext {
+  font-family: fantasy;
+  visibility: hidden;
+  width: 300px;
+  background-color: #00FFFF;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -50%;
+  left: 40%;
+  margin-left: -100px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  }
+/*About me-showcased the basic skills we learned as we first started coding.*/
+  .nav1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -25px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn1 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown1:hover .dropbtn1 {
+  background-color: grey;
+}
+
+li.dropdown1 {
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-content1 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content1 a:hover {background-color: grey;}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav1 {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1400px;
+}
+.Portfolio21 {
+  position: relative;
+  top: -300px;
+  left: 600px;
+}
+
+.embedPage1 {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: 0px;
+  left: -5px;
+  width: 70%;
+  z-index: 1;
+}
+.commentary1 {
+  font-size: 26px;
+  position: relative;
+  font-family: fantasy;
+  top: -1780px;
+  right: -960px;
+  width: 28%;
+
+}
+
+/*Environment-showcased our new knowledge about divs.*/
+.division0 {
+    color: black;
+    background-color: #00BFFF;
+    font-size: 10 px;
+    font-family: Lucida Handwriting;
+    padding: 20px;
+    opacity: 1
+    margin: 10px;
+    text-align: center;
+  }
+  .division23 {
+    color: black;
+    background-color: aqua;
+    font-size: 10 px;
+    font-family: Lucida Handwriting;
+    padding: 10px;
+    opacity: 0.7;
+    margin: 10px;
+    position: relative;
+    top: 0px;
+  }
+  .division1 {
+    color: blue;
+    background-color: grey;
+    font-size: 10 px;
+    font-family: Garamond;
+    padding: 20px;
+    margin: 10px;
+  }
+  .division2 {
+    color: white;
+    background-color: royalblue;
+    font-size: 10 px;
+    font-family: Courier New;
+    padding: 20px;
+    opacity: 0.7;
+    margin: 10px;
+  }
+  .division3 {
+    color: blue;
+    background: grey;
+    font-family: Papyrus;
+  }
+  .division4 {
+    color: blue;
+    background-color: aqua;
+    font-size: 10 px;
+    font-family: Papyrus;
+    padding: 15px;
+    opacity: 0.7
+    margin: 10px;
+  }
+.nav2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -25px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn2 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown2:hover .dropbtn2 {
+  background-color: grey;
+}
+
+li.dropdown2 {
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content2 a:hover {background-color: grey;}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav2 {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1400px;
+}
+.Portfolio22 {
+  position: relative;
+  top: -150px;
+  left: 600px;
+}
+
+.embedPage2 {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: -0px;
+  left: -5px;
+  width: 70%;
+  z-index: 1;
+}
+
+.commentary2 {
+  font-size: 26px;
+  position: relative;
+  font-family: fantasy;
+  top: -2300px;
+  right: -960px;
+  width: 28%;
+
+}
+
+/*ISPs-more about learning about ISPs than coding.*/
+.division11 {
+    color: black;
+    background-color: #00BFFF;
+    font-size: 10 px;
+    font-family: Courier New;
+    padding: 20px;
+    opacity: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  .division12 {
+    color: black;
+    background-color: #00BFFF;
+    font-size: 10 px;
+    font-family: Courier New;
+    padding: 20px;
+    opacity: 1
+    margin: 10px;
+    
+  }
+  .division13 {
+    color: black;
+    background-color: aqua;
+    font-size: 10 px;
+    font-family: Lucida Handwriting;
+    padding: 20px;
+    margin: 10px;
+  }
+    .nav4 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: 0px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn4 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown4:hover .dropbtn4 {
+  background-color: grey;
+}
+
+li.dropdown4 {
+  display: inline-block;
+}
+
+.dropdown-content4 {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-content4 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content4 a:hover {background-color: grey;}
+
+.dropdown4:hover .dropdown-content4 {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav4 {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1400px;
+}
+.Portfolio24 {
+  position: relative;
+  top: -150px;
+  left: 600px;
+}
+
+.embedPage4 {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: 20px;
+  left: -5px;
+  width: 70%;
+  z-index: 1;
+}
+
+.commentary4 {
+  font-size: 25px;
+  position: relative;
+  font-family: fantasy;
+  top: -1450px;
+  right: -940px;
+  width: 28%;
+}
+
+/*PN-used relative links, pictures, layering and a dropdown.*/
+table, tr {
+ border: 3px solid #ADD8E6;
+ color: #20B2AA;
+ font-family: Courier New;
+ font-size: 23px;
+ padding: 15px;
+ position: relative;
+ left: 475px;
+ top: 90px;
+}
+.inf0 {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 190px;
+  padding: 10px;
+  z-index: 5;
+}
+.info {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 360px;
+  padding: 10px;
+  z-index: 1;
+}
+.inf {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left:10px;
+  padding: 10px;
+  z-index: 5;
+}
+.info2 {
+  color:black;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info3 {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+}
+.info4 {
+  color:#DCDCDC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info5 {
+  color:#FFF8DC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.img2 {
+  position: absolute;
+  right: 30px;
+  top: 525px;
+}
+.img3 {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+.img4 {
+  position: absolute;
+  right: 50px;
+  top: 500px;
+}
+.img5 {
+  font-size: 11px;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  right: 150px;
+  top: 20px;
+}
+ .dropbtnA {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 295px;
+}
+ .dropbtn20 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 227px;
+}
+.dropdownA p {
+  position: relative;
+  display: block;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+  background-color: #8A2BE2;
+  position: absolute;
+  left:10px;
+  top: 255px;
+  padding: 10px;
+}
+.dropdown20 p {
+  position: relative;
+  display: block;
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-contentA {
+  padding: 0px;
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  font-family: sans-serif;
+  color: #8B0000;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left:10px;
+  top: 339px;
+}
+.dropdown-content20 {
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 277px;
+}
+.dropdown-contentA a {
+  color:#8B0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdownA:hover {
+  display: block;
+}
+.dropdownA {
+  background-color: #9932CC;
+}
+.dropdownA:hover .dropdown-contentA {
+  color:#8B0000;
+  background-color:#FFB6C1;
+  font-family: sans-serif;
+  display: block;
+}
+/*point from one to two*/
+
+.dropdown-content20 a {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdown20:hover {
+  display: block;
+}
+.dropdown20 {
+  background-color:#66CDAA;
+}
+.dropdown20:hover .dropdown-content20 {
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  display: block;
+}
+.bib {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  left:10px;
+  top: 500px;
+  padding: 10px;
+  z-index: 5;
+}
+.bib2 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 525px;
+}
+/*new stuff*/
+    .nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -125px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+  color: #6495ED;
+}
+
+li a, .dropbtnB {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdownB:hover .dropbtnB {
+  background-color: grey;
+}
+
+li.dropdownB {
+  display: inline-block;
+}
+
+.dropdown-contentB {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-contentB a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contentB a:hover {background-color: grey;}
+
+.dropdownB:hover .dropdown-contentB {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav5 {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1300px;
+}
+.Portfolio25 {
+  position: relative;
+  top: -150px;
+  left: 600px;
+}
+
+.embedPage5 {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: -100px;
+  left: -5px;
+  width: 70%;
+  height: 820px;
+  z-index: 1;
+}
+
+.commentary5 {
+  font-size: 20px;
+  position: relative;
+  font-family: fantasy;
+  top: -930px;
+  right: -960px;
+  width: 27%;
+
+}
+
+/*Buzzfeed-this was our first webpage with Javascript and using a form.*/
+
+      #alll {
+        font-family: Serif;
+        background-color: #CD5C5C;
+        text-align: center;
+      }
+      #all {
+        font-family: serif;
+        background-color: #CD5C5C;
+        height: 800px;
+        }
+      .margin {
+        margin: 10px;
+      }
+      #results {
+        padding: 50px;
+        display: none;
+        background-color: #e600e6;
+        margin-top: 20px;
+        font-size: 18;
+      }
+/*This is how I positioned all of the different pictures on the pages and I tinkered with these placements a lot over the course of this project.*/
+   .main0 {
+  position: relative;
+  right: -10px;
+  top: -10px;
+}
+
+  .main {
+  position: relative;
+  right: -50px;
+  top: 5px;
+}
+.main1 {
+  position: relative;
+  right: -350px;
+  top: -302px;
+}
+
+.main2 {
+  position: relative;
+  right: -700px;
+  top: -609px;
+}
+.main {
+  animation: bounce 1s;
+}
+/*This is all of the different pieces of the Navbar including the main part, the clickable source button, and the dropdown source pages and all of their different attributes.*/
+.navbarA {
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: Serif;
+}
+
+.navbarA a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*This is the image in my source page that also has an animation and this css style shows it's placement, and also the animation that it will perform.*/
+.image {
+  position: relative;
+  left: 725px;
+  top: -325px;
+  animation: bounce 1s;
+}
+.dropdownA {
+  float: left;
+  overflow: hidden;
+}
+
+ .dropdownA .dropbtnA {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #6495ED;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*This dictates what happens when a viewer hovers over the navbar and what visual changes will happen, but these css styles also determine what will happen when you click on it and the non-visual chnages that will happen.*/
+.navbarA a:hover, .dropdownA:hover .dropbtnA {
+  background-color: black;
+}
+
+.dropdown-contentA {
+  display: none;
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+/*Dropdown content a is talking about the links that are inside of the dropdown, in this case, the webpage sources and the image sources and how they will look.*/
+.dropdown-contentA a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contentA a:hover {
+  background color: black;
+}
+
+.dropdownA:hover .dropdown-contentA {
+  display: block;
+}
+
+.p1 {
+  font-family: Serif;
+  color: black;
+  padding-left: 10px;
+}
+
+/*These not only let me make a box to hold text, but also the animation that goes with it and the keyframes that make that happen.*/
+.rcorners {
+  border: 5px inset black;
+  background: grey;
+  padding: 10px;
+  width: 800px;
+  height: 260px;
+  float: left;
+  position:relative;
+  left: 50px;
+  top: 30px;
+  }
+
+.embedpage {
+  fill-rule: #CD5C5C;
+  height: 800px;
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: -100px;
+  left: -5px;
+  width: 70%;
+  z-index: 1;
+}
+
+  .nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -125px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1300px;
+}
+.Portfolio2 {
+  position: relative;
+  top: -300px;
+  left: 600px;
+}
+
+.rcorners {
+  animation: bounce 1s;
+
+}
+/*Transformation of animation. First at 0%, full size 100%*/
+@keyframes bounce {
+  0% {
+    transform: scale(0.0);
+    opacity: 0;}
+  50% {
+    transform: scale(1.2);
+    opacity:0;}
+  100% {
+    transform: scale(1);}
+
+

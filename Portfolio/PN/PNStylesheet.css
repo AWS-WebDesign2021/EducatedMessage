@@ -1,0 +1,351 @@
+
+table, tr {
+ border: 3px solid #ADD8E6;
+ color: #20B2AA;
+ font-family: Courier New;
+ font-size: 23px;
+ padding: 15px;
+ position: relative;
+ left: 475px;
+ top: 90px;
+}
+.inf0 {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 190px;
+  padding: 10px;
+  z-index: 5;
+}
+.info {
+  color: #8B0000;
+  background-color: #FFB6C1;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  left:10px;
+  top: 360px;
+  padding: 10px;
+  z-index: 1;
+}
+.inf {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left:10px;
+  padding: 10px;
+  z-index: 5;
+}
+.info2 {
+  color:black;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info3 {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+}
+.info4 {
+  color:#DCDCDC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.info5 {
+  color:#FFF8DC;
+  font-family: Lucida handwriting;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+}
+.img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.img2 {
+  position: absolute;
+  right: 30px;
+  top: 525px;
+}
+.img3 {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+.img4 {
+  position: absolute;
+  right: 50px;
+  top: 500px;
+}
+.img5 {
+  font-size: 11px;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  position: absolute;
+  right: 150px;
+  top: 20px;
+}
+ .dropbtnA {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 295px;
+}
+ .dropbtn2 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left:10px;
+  top: 227px;
+}
+.dropdownA p {
+  position: relative;
+  display: block;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: white;
+  background-color: #8A2BE2;
+  position: absolute;
+  left:10px;
+  top: 255px;
+  padding: 10px;
+}
+.dropdown2 p {
+  position: relative;
+  display: block;
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-contentA {
+  padding: 0px;
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  font-family: sans-serif;
+  color: #8B0000;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left:10px;
+  top: 339px;
+}
+.dropdown-content2 {
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  background-color: yellow;
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 277px;
+}
+.dropdown-contentA a {
+  color:#8B0000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdownA:hover {
+  display: block;
+}
+.dropdownA {
+  background-color: #9932CC;
+}
+.dropdownA:hover .dropdown-contentA {
+  color:#8B0000;
+  background-color:#FFB6C1;
+  font-family: sans-serif;
+  display: block;
+}
+/*point from one to two*/
+
+.dropdown-content2 a {
+  color:#20B2AA;
+  background-color:#ADD8E6;
+  font-family: Lucida handwriting;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} 
+.dropdown2:hover {
+  display: block;
+}
+.dropdown2 {
+  background-color:#66CDAA;
+}
+.dropdown2:hover .dropdown-content2 {
+  color:#000080;
+  background-color:#66CDAA;
+  font-family: sans-serif;
+  display: block;
+}
+.bib {
+  background-color: #9932CC;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  left:10px;
+  top: 500px;
+  padding: 10px;
+  z-index: 5;
+}
+.bib2 {
+  background-color:#66CDAA;
+  color: #000080;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 525px;
+}
+/*new stuff*/
+    .nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -125px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+  color: #6495ED;
+}
+
+li a, .dropbtnB {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdownB:hover .dropbtnB {
+  background-color: grey;
+}
+
+li.dropdownB {
+  display: inline-block;
+}
+
+.dropdown-contentB {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-contentB a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contentB a:hover {background-color: grey;}
+
+.dropdownB:hover .dropdown-contentB {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1300px;
+}
+.Portfolio2 {
+  position: relative;
+  top: -150px;
+  left: 600px;
+}
+
+.embedPage {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: -100px;
+  left: -5px;
+  width: 70%;
+  height: 820px;
+  z-index: 1;
+}
+
+.commentary {
+  font-size: 20px;
+  position: relative;
+  font-family: fantasy;
+  top: -930px;
+  right: -960px;
+  width: 27%;
+
+}

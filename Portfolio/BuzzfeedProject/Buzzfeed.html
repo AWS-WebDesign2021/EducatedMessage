@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<div id="all">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel = "icon" href = "Icon.jpg" type = "image/x-icon">
+    <link href="Buzzfeed.css" type="text/css" rel="stylesheet">
+
+    <title>ULTIMATE Marvel Trivia Quiz</title>
+  </head>
+
+  <body>
+    <br>
+    <center> <h1>ULTIMATE Marvel Trivia Quiz</h1> </center>
+    <form>
+     <div class="navbarA">
+      <a href="./BuzzfeedHome.html">Home</a>
+       <div class="dropdownA">
+        <button class="dropbtnA">Sources
+          <i class="fa fa caret-down"></i>
+        </button>
+        <div class="dropdown-contentA">
+          <a href="./WebsiteSources.html">Website Sources</a>
+          <a href="./ImageSources.html">Image Sources</a>
+        </div>
+      </div>
+      </div>
+      <center>
+      <h3>Let's get started!</h3>
+<!--I added either an image or a gif to each question to make it more engaging and exciting and to try to make this more like an actual Buzzfeed quiz.-->
+      <img src="Main.jpg" height=250 width=350>
+      <br>
+      <p><b>What does SHIELD stand for?</b></p>
+    <input type="radio" id="ShTrue" name="Shield">
+    <label for="helo">Strategic Homeland Intervention, Enforcement, and Logistics Division</label><br>
+    <input type="radio" id="ShFalse" name="Shield">
+    <label for="helo">Strategic Hazard Intervention Espionage Logistics Directorate</label><br>
+    <input type="radio" id="ShFalse" name="Shield">
+    <label for="helo">Supreme Headquarters, International Espionage, Law-Enforcement Division</label>
+    <br>
+      <br>
+      <img src="SHIELD.gif" height=300 width=500>
+      <br>
+      <br>
+      <p><b>Who is the oldest Marvel character?</b></p>
+       <input type="radio" id="AgeFalse" name="age">
+      <label for="optionS">Bucky Barnes</label>
+      <input type="radio" id="AgeTrue" name="age">
+      <label for="option2">Thor</label>
+      <input type="radio" id="AgeFalse" name="age">
+      <label for="option3">Steve Rogers</label>
+      <br>
+      <br>
+      <!--It was a little complicated to make to make textbox correct answers, but I wanted to have variety in the question formats. I explain more of how I did it in a comment farther down in the scores.-->
+      <img src="Old.jpg" height=300 width=200>
+      <br>
+      <br>
+      <label for="user"><b>What year did the first Marvel comic come out?</b></label>
+      <br>
+      <input maxlength="4" type="text" name="comic" id="comicyear">
+      <br>
+      <br>
+      <img src="Comic.gif" width=350 height=500>
+      <br>
+      <br>
+       <p><b>Is Tony Stark the richest avenger?</b></p>
+       <input type="radio" id="False" name="rich">
+      <label for="optionYes">Yes</label>
+      <input type="radio" id="True" name="rich">
+      <label for="optionNo">No</label>
+      <br>
+      <br>
+      <img src="tony.jpg" height=300 width=600>
+      <br>
+      <br>
+      <label for="user"><b>What year is Endgame set in?</b></label>
+      <br>
+      <input maxlength="4" type="text" name="endgame" id="endgameyear">
+      <br>
+      <br>
+      <img src="endgame.jpg" width=400 height=250>
+      <br>
+      <p><b>Is there an orange Infinity Stone?</b></p>
+       <input type="radio" id="StoneTrue" name="stone">
+      <label for="optionYes">Yes</label>
+      <input type="radio" id="StoneFalse" name="stone">
+      <label for="optionNo">No</label>
+      <br>
+      <br>
+      <img src="thanos.gif" height=350 width=350>
+      <br>
+      <br>
+      <p><b>Where was Black Widow born?</b></p>
+       <input type="radio" id="CityTrue" name="City">
+      <label for="optionS">Volgograd</label>
+      <input type="radio" id="CityFalse" name="City">
+      <label for="option2">Ivanovo</label>
+      <input type="radio" id="CityFalse" name="City">
+      <label for="option3">Karelia</label>
+      <input type="radio" id="CityFalse" name="City">
+      <label for="option4">Moscow</label>
+      <input type="radio" id="CityFalse" name="City">
+      <label for="option5">Rostov</label>
+      <br>
+      <br>
+      <img src="blackwidow.jpg" height=300 width=300>
+      <br>
+      <br>
+      <p><b>What power does Wanda Maximoff NOT have?</b></p>
+       <input type="radio" id="PowerFalse" name="power">
+      <label for="optionS">Time Manipulation</label>
+      <input type="radio" id="PowerFalse" name="power">
+      <label for="option2">Psionics</label>
+      <input type="radio" id="PowerTrue" name="power">
+      <label for="option3">Pyrokinesis</label>
+      <br>
+      <br>
+      <img src="wanda.gif" height=350 width=450>
+      <br>
+      <br>
+    <!--The favorite Avenger question isn't used for scoring, but it is used to add a more personal aspect when you submit the quiz and you get your score and other information.-->
+      <label for="user"><b>What's your favorite Avenger?</b></label>
+      <br>
+      <input maxlength="25" type="text" name="favorite" id="fave">
+      <br>
+      <br>
+      <img src="avengers.gif" width=400 height=250>
+      <br>
+      <input type="button" value="Submit" onclick="showInput();">
+      </center>
+    </form>
+
+    <br>
+    <br>
+    <div id="results">
+      <!--I used span id and parts of pre-written sentences to make a response that is more than just stating your score and it changes depending on each person and what they choose.-->
+      <p>You got
+        <span id="score"></span> out of 8 correct! Which means you
+        <span id="level"></span>. Thanks for playing! By the way, 
+        <span id="faveAvenger"></span>
+        is a great choice for your favorite Avenger! 
+        <br>
+      <!--<span id="score"></span>-->
+      </p>
+
+    </div>
+
+    <script language="JavaScript">
+      /*This allows different variables, like "faveAvenger" to mean different things in different sections of the code and to be used for multiple things, like "results".*/
+      function showInput() {
+      var r = document.getElementById('results');
+        r.style.display = "block";
+        document.getElementById("faveAvenger").innerHTML =
+                    document.getElementById("fave").value;
+
+    var score = 0; /*I started the score at zero so that for every question the viewer gets right, it adds a point to their score, and using span id and pre-written sentences, it will tell what they got out of the total, possible points.*/
+document.getElementById("score").innerHTML = score.toString();
+         if (document.getElementById("ShTrue").checked)
+        {
+          score = score + 1;
+        }
+        if (document.getElementById("AgeTrue").checked)
+        {
+          score = score + 1;
+        }
+        /*I had to mess around with it, but I finally got the correct syntax for textboxes, which are a bit of a strange format, because they are slightly more complicated than the viewer picking from already chosen answers.*/
+        if (document.getElementById("comicyear").value == "1969")
+        {
+          score = score + 1;
+        }
+        if (document.getElementById("True").checked)
+        {
+          score = score + 1;
+        }
+        /*I also used the textbox syntax for this question because this is another one I was having some problems with.*/
+        if (document.getElementById("endgameyear").value == "2023")
+        {
+          score = score + 1;
+        }
+        if (document.getElementById("StoneTrue").checked)
+        {
+          score = score + 1;
+        }
+        if (document.getElementById("CityTrue").checked)
+        {
+          score = score + 1;
+        }
+        if (document.getElementById("PowerTrue").checked)
+        {
+          score = score + 1;
+        }
+document.getElementById("score").innerHTML = score.toString(); 
+/*Depending on how many questions the viewer gets right, there are 7 different responses that they could possibly get. Because of this, their specific score will get a lot more of a specific catagory of skill.*/
+
+if (score == 8) {
+
+        document.getElementById('level').innerHTML = "are an expert at Marvel Trivia"
+        }
+if (score == 7) {
+
+        document.getElementById('level').innerHTML = "are basically an expert at Marvel Trivia"
+        }
+if (score == 6) {
+
+        document.getElementById('level').innerHTML = "know a lot about Marvel"
+        }
+if (score == 5) {
+
+        document.getElementById('level').innerHTML = "are pretty good at Marvel Trivia"
+        }
+if (score == 4) {
+
+        document.getElementById('level').innerHTML = "aren't horrible at Marvel Trivia, but you definitely aren't great"
+        }
+if (score == 3) {
+
+        document.getElementById('level').innerHTML = "are pretty bad at Marvel Trivia"
+        }
+
+if (score == 2) {
+
+        document.getElementById('level').innerHTML = "suck at Marvel trivia"
+        }  
+if (score == 1) {
+
+        document.getElementById('level').innerHTML = "have probably never seen a Marvel movie before"
+        }
+if (score == 0) {
+
+        document.getElementById('level').innerHTML = "have probably never even heard of Marvel"
+        }
+}
+    </script>
+  </div>
+  </body>
+</html>

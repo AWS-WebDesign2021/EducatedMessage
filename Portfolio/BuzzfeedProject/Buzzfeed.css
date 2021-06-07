@@ -1,0 +1,253 @@
+
+      #alll {
+        font-family: Serif;
+        background-color: #CD5C5C;
+        text-align: center;
+      }
+      #all {
+        font-family: serif;
+        background-color: #CD5C5C;
+        height: 4700px;
+        }
+      .margin {
+        margin: 10px;
+      }
+      #results {
+        padding: 50px;
+        display: none;
+        background-color: #6495ED;
+        margin-top: 20px;
+        font-size: 18;
+      }
+/*This is how I positioned all of the different pictures on the pages and I tinkered with these placements a lot over the course of this project.*/
+   .main0 {
+  position: relative;
+  right: -10px;
+  top: -10px;
+}
+
+  .main {
+  position: relative;
+  right: -50px;
+  top: 5px;
+}
+.main1 {
+  position: relative;
+  right: -350px;
+  top: -302px;
+}
+
+.main2 {
+  position: relative;
+  right: -700px;
+  top: -609px;
+}
+.main {
+  animation: bounce 1s;
+}
+/*This is all of the different pieces of the Navbar including the main part, the clickable source button, and the dropdown source pages and all of their different attributes.*/
+.navbarA {
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: Serif;
+}
+
+.navbarA a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*This is the image in my source page that also has an animation and this css style shows it's placement, and also the animation that it will perform.*/
+.image {
+  position: relative;
+  left: 725px;
+  top: -325px;
+  animation: bounce 1s;
+}
+.dropdownA {
+  float: left;
+  overflow: hidden;
+}
+
+ .dropdownA .dropbtnA {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #6495ED;
+  font-family: inherit;
+  margin: 0;
+}
+
+/*This dictates what happens when a viewer hovers over the navbar and what visual changes will happen, but these css styles also determine what will happen when you click on it and the non-visual chnages that will happen.*/
+.navbarA a:hover, .dropdownA:hover .dropbtnA {
+  background-color: black;
+}
+
+.dropdown-contentA {
+  display: none;
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+/*Dropdown content a is talking about the links that are inside of the dropdown, in this case, the webpage sources and the image sources and how they will look.*/
+.dropdown-contentA a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contentA a:hover {
+  background color: black;
+}
+
+.dropdownA:hover .dropdown-contentA {
+  display: block;
+}
+
+.p1 {
+  font-family: Serif;
+  color: black;
+  padding-left: 10px;
+}
+
+/*These not only let me make a box to hold text, but also the animation that goes with it and the keyframes that make that happen.*/
+.rcorners {
+  border: 5px inset black;
+  background: grey;
+  padding: 10px;
+  width: 800px;
+  height: 260px;
+  float: left;
+  position:relative;
+  left: 50px;
+  top: 30px;
+  }
+
+
+  .nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED;
+  font-family: garamond;
+    position: relative;
+  left: -45px;
+  top: -125px;
+  height: 175px;
+  width: 1440px;
+  font-size: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn8 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown8:hover .dropbtn8 {
+  background-color: grey;
+}
+
+li.dropdown8 {
+  display: inline-block;
+}
+
+.dropdown-content8 {
+  display: none;
+  background-color: #6495ED;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: garamond;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  font-size: 10px;
+}
+
+.dropdown-content8 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content8 a:hover {background-color: grey;}
+
+.dropdown8:hover .dropdown-content8 {
+  display: block;
+}
+/*Portflio nav*/
+.PortfolioNav {
+  background-color: #ffec89;
+  color: #240000;
+  font-size: 40;
+  font-weight: bold;
+  font-family: garamond;
+  position: relative;
+  left: -10;
+  padding: 50px;
+  height: 400px;
+  width: 1300px;
+}
+.Portfolio28 {
+  position: relative;
+  top: -150px;
+  left: 550px;
+}
+
+.embedPage1 {
+  margin: 10px;
+  border-style: double;
+  position: relative;
+  top: -100px;
+  left: -5px;
+  width: 70%;
+  height: 800px;
+  z-index: 1;
+}
+
+
+.comentary {
+  font-size: 17px;
+  font-family: fantasy;
+  position: relative;
+  top: -800px;
+  right: -980px;
+  width: 28%;
+
+}
+.rcorners {
+  animation: bounce 1s;
+}
+/*This shows the transformation that the textbox will have when it does it's animation. First, it is at 0%, then 50% and then, when it is at the end of it's transformation, it is at 100%, it's full size.*/
+@keyframes bounce {
+  0% {
+    transform: scale(0.0);
+    opacity: 0;}
+  50% {
+    transform: scale(1.2);
+    opacity:0;}
+  100% {
+    transform: scale(1);}
+
+  /*new stuff*/
